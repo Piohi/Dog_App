@@ -11,6 +11,11 @@
 		AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C7C2A7BC98A00D481DE /* ContentView.swift */; };
 		AA030C7F2A7BC98A00D481DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA030C7E2A7BC98A00D481DE /* Assets.xcassets */; };
 		AA030C822A7BC98A00D481DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA030C812A7BC98A00D481DE /* Preview Assets.xcassets */; };
+		AA030C892A7BCA3900D481DE /* DogImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C882A7BCA3900D481DE /* DogImgView.swift */; };
+		AA030C8B2A7BCA6200D481DE /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8A2A7BCA6200D481DE /* ApiService.swift */; };
+		AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8C2A7BCB7000D481DE /* APIMethod.swift */; };
+		AA030C8F2A7BCB7C00D481DE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8E2A7BCB7C00D481DE /* APIError.swift */; };
+		AA030C922A7BCC5900D481DE /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C912A7BCC5900D481DE /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		AA030C7C2A7BC98A00D481DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA030C7E2A7BC98A00D481DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA030C812A7BC98A00D481DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA030C882A7BCA3900D481DE /* DogImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImgView.swift; sourceTree = "<group>"; };
+		AA030C8A2A7BCA6200D481DE /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		AA030C8C2A7BCB7000D481DE /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
+		AA030C8E2A7BCB7C00D481DE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AA030C912A7BCC5900D481DE /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,13 @@
 		AA030C792A7BC98A00D481DE /* Dog_App */ = {
 			isa = PBXGroup;
 			children = (
+				AA030C912A7BCC5900D481DE /* ImageModel.swift */,
 				AA030C7A2A7BC98A00D481DE /* Dog_AppApp.swift */,
 				AA030C7C2A7BC98A00D481DE /* ContentView.swift */,
 				AA030C7E2A7BC98A00D481DE /* Assets.xcassets */,
 				AA030C802A7BC98A00D481DE /* Preview Content */,
+				AA030C882A7BCA3900D481DE /* DogImgView.swift */,
+				AA030C902A7BCB8600D481DE /* NetworkLayer */,
 			);
 			path = Dog_App;
 			sourceTree = "<group>";
@@ -65,6 +78,16 @@
 				AA030C812A7BC98A00D481DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA030C902A7BCB8600D481DE /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AA030C8A2A7BCA6200D481DE /* ApiService.swift */,
+				AA030C8C2A7BCB7000D481DE /* APIMethod.swift */,
+				AA030C8E2A7BCB7C00D481DE /* APIError.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA030C892A7BCA3900D481DE /* DogImgView.swift in Sources */,
+				AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */,
 				AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */,
+				AA030C8B2A7BCA6200D481DE /* ApiService.swift in Sources */,
 				AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */,
+				AA030C8F2A7BCB7C00D481DE /* APIError.swift in Sources */,
+				AA030C922A7BCC5900D481DE /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

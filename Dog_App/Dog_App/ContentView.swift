@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var viewModel = DogPicViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Вотъ фотка собатьки")
+            AsyncImage(url: URL(string: "\(viewModel.model.message)"))
         }
         .padding()
+        .onAppear {
+            viewModel.fetchNewImage()
+        }
     }
 }
 
