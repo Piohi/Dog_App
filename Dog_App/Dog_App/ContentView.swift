@@ -19,7 +19,10 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .background(Color(red: 0, green: 0, blue: 0.5))
                 .clipShape(Capsule())
-            AsyncImage(url: URL(string: "\(viewModel.model.message)")).padding()
+//            AsyncImage(url: URL(string: "\(viewModel.model.message)"))
+//
+            AsyncImage(url: URL(string: "\(viewModel.model.message)")) { image in image.resizable() }
+            placeholder: { Color.red } .frame(width: 300, height: 300) .clipShape(RoundedRectangle(cornerRadius: 25))
                 
         }
         .padding()
