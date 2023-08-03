@@ -16,6 +16,7 @@
 		AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8C2A7BCB7000D481DE /* APIMethod.swift */; };
 		AA030C8F2A7BCB7C00D481DE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8E2A7BCB7C00D481DE /* APIError.swift */; };
 		AA030C922A7BCC5900D481DE /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C912A7BCC5900D481DE /* ImageModel.swift */; };
+		AA030C962A7BD65F00D481DE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C952A7BD65F00D481DE /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		AA030C8C2A7BCB7000D481DE /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		AA030C8E2A7BCB7C00D481DE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		AA030C912A7BCC5900D481DE /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		AA030C952A7BD65F00D481DE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		AA030C6E2A7BC98900D481DE = {
 			isa = PBXGroup;
 			children = (
+				AA030C952A7BD65F00D481DE /* Button.swift */,
 				AA030C792A7BC98A00D481DE /* Dog_App */,
 				AA030C782A7BC98A00D481DE /* Products */,
 			);
@@ -163,6 +166,7 @@
 				AA030C892A7BCA3900D481DE /* DogImgView.swift in Sources */,
 				AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */,
 				AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */,
+				AA030C962A7BD65F00D481DE /* Button.swift in Sources */,
 				AA030C8B2A7BCA6200D481DE /* ApiService.swift in Sources */,
 				AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */,
 				AA030C8F2A7BCB7C00D481DE /* APIError.swift in Sources */,

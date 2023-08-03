@@ -13,8 +13,14 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Вотъ фотка собатьки")
-            AsyncImage(url: URL(string: "\(viewModel.model.message)"))
+            Text("Вотъ картинка собатьки")
+            Button("Ещё", action: viewModel.fetchNewImage)
+                .padding()
+                .foregroundColor(.white)
+                .background(Color(red: 0, green: 0, blue: 0.5))
+                .clipShape(Capsule())
+            AsyncImage(url: URL(string: "\(viewModel.model.message)")).padding()
+                
         }
         .padding()
         .onAppear {
