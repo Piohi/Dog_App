@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     
@@ -14,15 +15,20 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Вотъ картинка собатьки")
+       
+            
+            if viewModel.model.message.isEmpty {
+                                        LoadingView()
+                                    } else {
+                                        AsyncImage(url: URL(string: "\(viewModel.model.message)")) { image in image.resizable()
+                                                .scaledToFit()
+                                        }
+                                                   placeholder: { Color.cyan } .frame(width: 300, height: 300) .clipShape(RoundedRectangle(cornerRadius: 25))
+                                    }
             Button("Ещё", action: viewModel.fetchNewImage)
-                .padding()
-                .foregroundColor(.white)
-                .background(Color(red: 0, green: 0, blue: 0.5))
-                .clipShape(Capsule())
-//            AsyncImage(url: URL(string: "\(viewModel.model.message)"))
-//
-            AsyncImage(url: URL(string: "\(viewModel.model.message)")) { image in image.resizable() }
-            placeholder: { Color.red } .frame(width: 300, height: 300) .clipShape(RoundedRectangle(cornerRadius: 25))
+                .buttonStyle(GrowingButton())
+            
+                    
                 
         }
         .padding()
