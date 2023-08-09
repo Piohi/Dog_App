@@ -1,17 +1,24 @@
 //
-//  DogImgView.swift
+//  DogModel.swift
 //  Dog_App
 //
-//  Created by Anton Godunov on 03.08.2023.
+//  Created by Anton Godunov on 09.08.2023.
 //
 
 import Foundation
 
 
-
-final class DogPicViewModel: ObservableObject {
+final class DogModel: ObservableObject {
     @Published var model = DogPicModel.init()
+    var favoriteDogs: [String]
     
+    init(favoriteDogs: [String]) {
+        self.favoriteDogs = favoriteDogs
+    }
+    
+    init() {
+        self.favoriteDogs = []
+    }
     
     private let service = APIService()
     

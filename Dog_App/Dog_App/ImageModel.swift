@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import Combine
 
 struct DogPicModel: Codable {
     let message: String
