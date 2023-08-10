@@ -67,6 +67,7 @@ struct ContentView: View {
             .padding()
             .onAppear {
                 viewModel.fetchNewImage()
+                isFavorite = false
             }.tabItem {
                 Label("Картинки", systemImage: "house.fill")
                 

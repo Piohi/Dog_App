@@ -10,6 +10,15 @@ import Kingfisher
 
 struct FavoriteCell: View {
     
+    @GestureState var scale = 1.0
+    var  magnification: some Gesture {
+        MagnificationGesture()
+            .updating($scale) { currentState, pastState, transaction in
+                pastState = currentState
+                
+            }
+    }
+    
     let favorite: String
     
     var body: some View {
@@ -20,7 +29,12 @@ struct FavoriteCell: View {
                     .resizable()
                     .frame(width: 200, height: 150)
                     .cornerRadius(20)
-                    .scaledToFit()}
+                    .scaledToFill()
+                    .scaleEffect(scale)
+                    .gesture(magnification)
+           
+            
+        }
             
           
         }

@@ -11,11 +11,19 @@ struct FavoritesView: View {
     @Binding var favDog: [String]
     var body: some View {
         
-        
-        VStack(alignment: .center, spacing: 25) {
-            
-            ForEach(favDog, id: \.self) {favDog in
-                FavoriteCell(favorite: favDog)
+        HStack {
+            VStack(alignment: .center, spacing: 25) {
+                
+                    ForEach(favDog, id: \.self) {favDog in
+                        FavoriteCell(favorite: favDog)
+                        
+                        Button {
+                            favDog.dropLast()
+                            
+                        } label: {
+                            Text("X")
+                        }
+                    }
             }
         }
     }
