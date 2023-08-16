@@ -12,17 +12,17 @@ struct FavoritesView: View {
     var body: some View {
         
         HStack {
-            VStack(alignment: .center, spacing: 25) {
+            ScrollView(showsIndicators: false) {
                 
-                    ForEach(favDog, id: \.self) {favDog in
-                        FavoriteCell(favorite: favDog)
+                ForEach(favDog.indices, id: \.self) {index in
+                        FavoriteCell(favorite: favDog[index])
                         
                         Button {
-                            favDog.dropLast()
+                            favDog.remove(at: index)
                             
                         } label: {
-                            Text("X")
-                        }
+                            Text("Удалить")
+                        }.buttonStyle(GrowingButton())
                     }
             }
         }

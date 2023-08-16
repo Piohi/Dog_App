@@ -14,19 +14,17 @@ struct ContentView: View {
     
     @StateObject var viewModel = DogModel()
     @State private var isFavorite: Bool = false
-   @State var favoriteMassiv: [String]
+    @State var favoriteMassiv: [String]
     
     var body: some View {
         
         TabView {
             
-            FavoritesView(favDog: $favoriteMassiv)
-                .tabItem {
-                    Label("Сохранено", systemImage: "heart.circle")
-                }
+           
             
             VStack {
                 Text("Вотъ картинка собатьки")
+                
                 
                 
                 if viewModel.model.message.isEmpty {
@@ -65,21 +63,32 @@ struct ContentView: View {
                 
             }
             .padding()
-            .onAppear {
-                viewModel.fetchNewImage()
-                isFavorite = false
-            }.tabItem {
+            
+            .tabItem {
                 Label("Картинки", systemImage: "house.fill")
                 
-              
+                
+            }
+                
+                
+                FavoritesView(favDog: $favoriteMassiv)
+                    .tabItem {
+                        Label("Сохранено", systemImage: "heart.circle")
+                    }.onAppear {
+                        viewModel.fetchNewImage()
+                        isFavorite = false
+                        
+                
+                
+                
+         }
+            CatView()
+                    .tabItem{
+                        Label("Кошки", systemImage: "fleuron.fill")
+                    }
         }
         
-            
-           
-                
-        }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

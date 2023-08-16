@@ -22,6 +22,8 @@
 		AA030CA32A83E55600D481DE /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA22A83E55600D481DE /* FavoriteCell.swift */; };
 		AA030CA52A83EF8300D481DE /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA42A83EF8300D481DE /* DogModel.swift */; };
 		AA030CA82A83F77700D481DE /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA72A83F77700D481DE /* FavoritesView.swift */; };
+		AA030CAC2A8BAD8E00D481DE /* FavoriteDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CAB2A8BAD8E00D481DE /* FavoriteDogView.swift */; };
+		AA030CAE2A8CE60000D481DE /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CAD2A8CE60000D481DE /* CatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		AA030CA22A83E55600D481DE /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		AA030CA42A83EF8300D481DE /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		AA030CA72A83F77700D481DE /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		AA030CAB2A8BAD8E00D481DE /* FavoriteDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDogView.swift; sourceTree = "<group>"; };
+		AA030CAD2A8CE60000D481DE /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				AA030C7C2A7BC98A00D481DE /* ContentView.swift */,
 				AA030CA22A83E55600D481DE /* FavoriteCell.swift */,
 				AA030CA72A83F77700D481DE /* FavoritesView.swift */,
+				AA030CAB2A8BAD8E00D481DE /* FavoriteDogView.swift */,
+				AA030CAD2A8CE60000D481DE /* CatView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,9 +202,11 @@
 				AA030CA82A83F77700D481DE /* FavoritesView.swift in Sources */,
 				AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */,
 				AA030C9B2A7E664E00D481DE /* LoadingView.swift in Sources */,
+				AA030CAC2A8BAD8E00D481DE /* FavoriteDogView.swift in Sources */,
 				AA030C9D2A7E86F000D481DE /* ButtonStyle.swift in Sources */,
 				AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */,
 				AA030C8B2A7BCA6200D481DE /* ApiService.swift in Sources */,
+				AA030CAE2A8CE60000D481DE /* CatView.swift in Sources */,
 				AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */,
 				AA030CA52A83EF8300D481DE /* DogModel.swift in Sources */,
 				AA030C8F2A7BCB7C00D481DE /* APIError.swift in Sources */,

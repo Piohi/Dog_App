@@ -1,14 +1,14 @@
 //
-//  FavoriteCell.swift
+//  FavoriteDogView.swift
 //  Dog_App
 //
-//  Created by Anton Godunov on 09.08.2023.
+//  Created by Anton Godunov on 15.08.2023.
 //
 
 import SwiftUI
 import Kingfisher
 
-struct FavoriteCell: View {
+struct FavoriteDogView: View {
     
     @GestureState var scale = 1.0
     var  magnification: some Gesture {
@@ -24,17 +24,14 @@ struct FavoriteCell: View {
     var body: some View {
         HStack {
             
-            
            
-                KFImage(URL(string: favorite))
+            KFImage(URL(string: favorite))
                     .resizable()
-                    .frame(width: 200, height: 150)
+                    .frame(width: 300, height: 200)
                     .cornerRadius(20)
                     .scaledToFill()
-                    .scaleEffect(scale)
+                    .scaleEffect()
                     .gesture(magnification)
-            
-            
            
             
         }
@@ -44,4 +41,8 @@ struct FavoriteCell: View {
         
     }
 
-
+//struct FavoriteDogView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FavoriteDogView()
+//    }
+//}
