@@ -11,21 +11,18 @@ struct FavoritesView: View {
     @Binding var favDog: [String]
     var body: some View {
         
-        HStack {
-            ScrollView(showsIndicators: false) {
-                
-                ForEach(favDog.indices, id: \.self) {index in
+        
+//            ScrollView(showsIndicators: false) {
+                List {
+                    ForEach(favDog.indices, id: \.self) {index in
                         FavoriteCell(favorite: favDog[index])
-                        
-                        Button {
-                            favDog.remove(at: index)
-                            
-                        } label: {
-                            Text("Удалить")
-                        }.buttonStyle(GrowingButton())
-                    }
-            }
-        }
+                    }.onDelete(perform: { indexSet in
+                        favDog.remove(atOffsets: indexSet)
+                    })
+                }
+            
+//        }
+        
     }
 }
 

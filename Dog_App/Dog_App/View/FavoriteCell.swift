@@ -22,7 +22,7 @@ struct FavoriteCell: View {
     let favorite: String
     
     var body: some View {
-        HStack {
+        HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
             
             
            
