@@ -84,7 +84,7 @@ struct ContentView: View {
          }
             CatView()
                     .tabItem{
-                        Label("Кошки", systemImage: "fleuron.fill")
+                        Label("Кошки", systemImage: "cat")
                     }
         }
         

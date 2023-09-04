@@ -24,6 +24,7 @@
 		AA030CA82A83F77700D481DE /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA72A83F77700D481DE /* FavoritesView.swift */; };
 		AA030CAC2A8BAD8E00D481DE /* FavoriteDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CAB2A8BAD8E00D481DE /* FavoriteDogView.swift */; };
 		AA030CAE2A8CE60000D481DE /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CAD2A8CE60000D481DE /* CatView.swift */; };
+		AAB662622AA5F31900B6BA1D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AAB662612AA5F31900B6BA1D /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AA030CA72A83F77700D481DE /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		AA030CAB2A8BAD8E00D481DE /* FavoriteDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDogView.swift; sourceTree = "<group>"; };
 		AA030CAD2A8CE60000D481DE /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
+		AAB662612AA5F31900B6BA1D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		AA030C6E2A7BC98900D481DE = {
 			isa = PBXGroup;
 			children = (
+				AAB662612AA5F31900B6BA1D /* .gitignore */,
 				AA030C792A7BC98A00D481DE /* Dog_App */,
 				AA030C782A7BC98A00D481DE /* Products */,
 			);
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA030C822A7BC98A00D481DE /* Preview Assets.xcassets in Resources */,
+				AAB662622AA5F31900B6BA1D /* .gitignore in Resources */,
 				AA030C7F2A7BC98A00D481DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
