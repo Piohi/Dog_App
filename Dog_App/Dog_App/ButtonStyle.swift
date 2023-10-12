@@ -12,7 +12,7 @@ struct GrowingButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(.blue)
+            .background(.gray)
             .foregroundStyle(.white)
             .clipShape(Capsule())
             .scaleEffect(configuration.isPressed ? 1.2 : 1)

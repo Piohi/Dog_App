@@ -6,19 +6,11 @@
 //
 
 import Foundation
-
+import Observation
 
 final class DogModel: ObservableObject {
     @Published var model = DogPicModel.init()
-    var favoriteDogs: [String]
     
-    init(favoriteDogs: [String]) {
-        self.favoriteDogs = favoriteDogs
-    }
-    
-    init() {
-        self.favoriteDogs = []
-    }
     
     private let service = APIService()
     
@@ -33,5 +25,20 @@ final class DogModel: ObservableObject {
                 print(failure.localizedDescription)
             }
         }
+    }
+}
+
+struct DogPicModel: Codable {
+    var message: String
+    let status: String
+    
+    init(message: String, status: String) {
+        self.message = message
+        self.status = status
+    }
+    
+    init() {
+        self.message = ""
+        self.status = ""
     }
 }

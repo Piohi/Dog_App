@@ -7,24 +7,21 @@
 
 import SwiftUI
 
+
 struct LoadingView: View {
-    
-    private let screen = UIScreen.main.bounds
-    
+//    func getInt() -> Int {
+//        abort()
+//    }
     var body: some View {
-        VStack(spacing: 16) {
-            VStack {
-                
-                
-                
-                
-                Rectangle()
-                    .foregroundColor(.clear)
-                    .background(.ultraThinMaterial)
-                    .frame(width: 300)
-                    .frame(height: 300)
-                    .cornerRadius(20)
-            }
-        }
+        
+       
+        Text("Hello")
+//        Text("\(getInt())")
+    }
+}
+
+struct LoadingView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoadingView()
     }
 }
