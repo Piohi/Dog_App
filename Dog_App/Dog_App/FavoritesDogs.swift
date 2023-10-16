@@ -15,5 +15,5 @@ final class FavoritesDogs {
     init(picsOfDogs: String) {
         self.picsOfDogs = picsOfDogs
     }
-    
+   
 }

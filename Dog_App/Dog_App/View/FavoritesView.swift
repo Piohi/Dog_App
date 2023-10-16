@@ -15,7 +15,7 @@ struct FavoritesView: View {
 //            ScrollView(showsIndicators: false) {
                 List {
                     ForEach(favDog.indices, id: \.self) {index in
-                        FavoriteCell(favorite: favDog[index])
+                        FavoriteCell(stingOfpicture: favDog[index])
                     }.onDelete(perform: { indexSet in
                         favDog.remove(atOffsets: indexSet)
                     })

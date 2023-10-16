@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA01EF082ADC47E5004EAE08 /* FavoritesDogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */; };
 		AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C7A2A7BC98A00D481DE /* Dog_AppApp.swift */; };
 		AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C7C2A7BC98A00D481DE /* ContentView.swift */; };
 		AA030C7F2A7BC98A00D481DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA030C7E2A7BC98A00D481DE /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		AA030CA32A83E55600D481DE /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA22A83E55600D481DE /* FavoriteCell.swift */; };
 		AA030CA52A83EF8300D481DE /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA42A83EF8300D481DE /* DogModel.swift */; };
 		AA030CA82A83F77700D481DE /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA72A83F77700D481DE /* FavoritesView.swift */; };
-		AA030CAC2A8BAD8E00D481DE /* FavoriteDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CAB2A8BAD8E00D481DE /* FavoriteDogView.swift */; };
 		AA030CAE2A8CE60000D481DE /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CAD2A8CE60000D481DE /* CatView.swift */; };
 		AA03F7822AD56F5B005493B2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA03F75A2AD5663A005493B2 /* WidgetKit.framework */; };
 		AA03F7832AD56F5B005493B2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA03F75C2AD5663A005493B2 /* SwiftUI.framework */; };
@@ -67,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDogsView.swift; sourceTree = "<group>"; };
 		AA030C772A7BC98A00D481DE /* Dog_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dog_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA030C7A2A7BC98A00D481DE /* Dog_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_AppApp.swift; sourceTree = "<group>"; };
 		AA030C7C2A7BC98A00D481DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		AA030CA22A83E55600D481DE /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		AA030CA42A83EF8300D481DE /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		AA030CA72A83F77700D481DE /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
-		AA030CAB2A8BAD8E00D481DE /* FavoriteDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDogView.swift; sourceTree = "<group>"; };
 		AA030CAD2A8CE60000D481DE /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 		AA03F75A2AD5663A005493B2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		AA03F75C2AD5663A005493B2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -150,6 +150,7 @@
 				AA030C902A7BCB8600D481DE /* NetworkLayer */,
 				AA030CA62A83F0CE00D481DE /* View */,
 				AA030C9C2A7E86F000D481DE /* ButtonStyle.swift */,
+				AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */,
 				AA03F7AC2AD6D3E1005493B2 /* FavoritesDogs.swift */,
 			);
 			path = Dog_App;
@@ -181,7 +182,6 @@
 				AA030C7C2A7BC98A00D481DE /* ContentView.swift */,
 				AA030CA22A83E55600D481DE /* FavoriteCell.swift */,
 				AA030CA72A83F77700D481DE /* FavoritesView.swift */,
-				AA030CAB2A8BAD8E00D481DE /* FavoriteDogView.swift */,
 				AA030CAD2A8CE60000D481DE /* CatView.swift */,
 				AA03F7A82AD6A520005493B2 /* CustomTabView.swift */,
 			);
@@ -325,7 +325,6 @@
 				AA030CA82A83F77700D481DE /* FavoritesView.swift in Sources */,
 				AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */,
 				AA030C9B2A7E664E00D481DE /* LoadingView.swift in Sources */,
-				AA030CAC2A8BAD8E00D481DE /* FavoriteDogView.swift in Sources */,
 				AA030C9D2A7E86F000D481DE /* ButtonStyle.swift in Sources */,
 				AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */,
 				AA030C8B2A7BCA6200D481DE /* ApiService.swift in Sources */,
@@ -333,6 +332,7 @@
 				AA030CAE2A8CE60000D481DE /* CatView.swift in Sources */,
 				AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */,
 				AA03F7A92AD6A520005493B2 /* CustomTabView.swift in Sources */,
+				AA01EF082ADC47E5004EAE08 /* FavoritesDogsView.swift in Sources */,
 				AA030CA52A83EF8300D481DE /* DogModel.swift in Sources */,
 				AA030C8F2A7BCB7C00D481DE /* APIError.swift in Sources */,
 			);

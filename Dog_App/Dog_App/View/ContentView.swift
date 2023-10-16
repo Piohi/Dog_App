@@ -112,7 +112,7 @@ struct ContentView: View {
                         case .dog:
                             DogsView()
                         case .heart:
-                            CatView()
+                            FavoritesDogsView()
                         case .cat:
                             CatView()
                        

@@ -16,3 +16,6 @@ struct LargeSizeView: View {
     }
 }
 
+#Preview {
+    LargeSizeView()
+}
