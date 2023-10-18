@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CatView: View {
 //    func getInt() -> Int {
@@ -13,7 +14,12 @@ struct CatView: View {
 //    }
     var body: some View {
         
-       
+
+        KFImage(URL(string: UserDefaults.standard.value(forKey: "pic") as! String))
+            .resizable()
+            .frame(width: 150, height: 100)
+            .cornerRadius(20)
+            .scaledToFit()
         Text("Hello")
 //        Text("\(getInt())")
     }

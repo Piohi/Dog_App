@@ -10,10 +10,12 @@ import SwiftData
 
 @Model
 final class FavoritesDogs {
+    
      var picsOfDogs: String
     
     init(picsOfDogs: String) {
         self.picsOfDogs = picsOfDogs
     }
+   
    
 }

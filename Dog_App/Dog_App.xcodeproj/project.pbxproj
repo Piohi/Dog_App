@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AA01EF082ADC47E5004EAE08 /* FavoritesDogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */; };
+		AA01EF0A2ADED880004EAE08 /* DogViewLand.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01EF092ADED880004EAE08 /* DogViewLand.swift */; };
+		AA01EF0C2ADEDAB4004EAE08 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01EF0B2ADEDAB4004EAE08 /* Extension.swift */; };
 		AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C7A2A7BC98A00D481DE /* Dog_AppApp.swift */; };
 		AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C7C2A7BC98A00D481DE /* ContentView.swift */; };
 		AA030C7F2A7BC98A00D481DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA030C7E2A7BC98A00D481DE /* Assets.xcassets */; };
@@ -37,7 +39,7 @@
 		AA03F7A32AD583A7005493B2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8E2A7BCB7C00D481DE /* APIError.swift */; };
 		AA03F7A42AD583AA005493B2 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8C2A7BCB7000D481DE /* APIMethod.swift */; };
 		AA03F7A92AD6A520005493B2 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7A82AD6A520005493B2 /* CustomTabView.swift */; };
-		AA03F7AB2AD6B3C8005493B2 /* DogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7AA2AD6B3C8005493B2 /* DogsView.swift */; };
+		AA03F7AB2AD6B3C8005493B2 /* DogViewPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7AA2AD6B3C8005493B2 /* DogViewPort.swift */; };
 		AA03F7AD2AD6D3E1005493B2 /* FavoritesDogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7AC2AD6D3E1005493B2 /* FavoritesDogs.swift */; };
 		AAB662622AA5F31900B6BA1D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AAB662612AA5F31900B6BA1D /* .gitignore */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDogsView.swift; sourceTree = "<group>"; };
+		AA01EF092ADED880004EAE08 /* DogViewLand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewLand.swift; sourceTree = "<group>"; };
+		AA01EF0B2ADEDAB4004EAE08 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		AA030C772A7BC98A00D481DE /* Dog_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dog_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA030C7A2A7BC98A00D481DE /* Dog_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_AppApp.swift; sourceTree = "<group>"; };
 		AA030C7C2A7BC98A00D481DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,7 +98,7 @@
 		AA03F7962AD571DE005493B2 /* MediumSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumSizeView.swift; sourceTree = "<group>"; };
 		AA03F7982AD57200005493B2 /* LargeSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSizeView.swift; sourceTree = "<group>"; };
 		AA03F7A82AD6A520005493B2 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
-		AA03F7AA2AD6B3C8005493B2 /* DogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsView.swift; sourceTree = "<group>"; };
+		AA03F7AA2AD6B3C8005493B2 /* DogViewPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewPort.swift; sourceTree = "<group>"; };
 		AA03F7AC2AD6D3E1005493B2 /* FavoritesDogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDogs.swift; sourceTree = "<group>"; };
 		AAB662612AA5F31900B6BA1D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +156,7 @@
 				AA030C9C2A7E86F000D481DE /* ButtonStyle.swift */,
 				AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */,
 				AA03F7AC2AD6D3E1005493B2 /* FavoritesDogs.swift */,
+				AA01EF0B2ADEDAB4004EAE08 /* Extension.swift */,
 			);
 			path = Dog_App;
 			sourceTree = "<group>";
@@ -177,9 +182,10 @@
 		AA030CA62A83F0CE00D481DE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AA03F7AA2AD6B3C8005493B2 /* DogsView.swift */,
-				AA030C9A2A7E664E00D481DE /* LoadingView.swift */,
 				AA030C7C2A7BC98A00D481DE /* ContentView.swift */,
+				AA03F7AA2AD6B3C8005493B2 /* DogViewPort.swift */,
+				AA01EF092ADED880004EAE08 /* DogViewLand.swift */,
+				AA030C9A2A7E664E00D481DE /* LoadingView.swift */,
 				AA030CA22A83E55600D481DE /* FavoriteCell.swift */,
 				AA030CA72A83F77700D481DE /* FavoritesView.swift */,
 				AA030CAD2A8CE60000D481DE /* CatView.swift */,
@@ -320,8 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA01EF0A2ADED880004EAE08 /* DogViewLand.swift in Sources */,
 				AA030CA32A83E55600D481DE /* FavoriteCell.swift in Sources */,
-				AA03F7AB2AD6B3C8005493B2 /* DogsView.swift in Sources */,
+				AA03F7AB2AD6B3C8005493B2 /* DogViewPort.swift in Sources */,
 				AA030CA82A83F77700D481DE /* FavoritesView.swift in Sources */,
 				AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */,
 				AA030C9B2A7E664E00D481DE /* LoadingView.swift in Sources */,
@@ -329,6 +336,7 @@
 				AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */,
 				AA030C8B2A7BCA6200D481DE /* ApiService.swift in Sources */,
 				AA03F7AD2AD6D3E1005493B2 /* FavoritesDogs.swift in Sources */,
+				AA01EF0C2ADEDAB4004EAE08 /* Extension.swift in Sources */,
 				AA030CAE2A8CE60000D481DE /* CatView.swift in Sources */,
 				AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */,
 				AA03F7A92AD6A520005493B2 /* CustomTabView.swift in Sources */,

@@ -1,0 +1,70 @@
+//
+//  DogViewPort.swift
+//  Dog_App
+//
+//  Created by Anton Godunov on 11.10.2023.
+//
+
+import SwiftUI
+import SwiftData
+import Kingfisher
+
+struct DogViewPort: View {
+    
+    @Query private var favoritePicOfDogs: [FavoritesDogs]
+    @Environment(\.modelContext) private var modelContext
+    @StateObject private var dogViewModel = DogModel()
+    @Environment(\.scenePhase) var scenePhase
+    
+    var body: some View {
+        
+
+        VStack(spacing: 30) {
+            
+            Button {
+                if  favoritePicOfDogs.contains(where: {
+                    $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
+                }){
+                    modelContext.delete(favoritePicOfDogs.filter{ $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String }.first!)
+                }
+                else {
+                    modelContext.insert(FavoritesDogs(picsOfDogs: "\(UserDefaults.standard.value(forKey: "pic") as! String)"))
+                }
+                    
+            } label: {
+                Image(systemName: favoritePicOfDogs.contains(where: {
+                    $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
+                }) ? "heart.fill" : "heart")
+                .animation(.bouncy)
+                    .font(.title)
+                    .foregroundStyle(.gray)
+                    
+                
+            }
+          
+                KFImage(URL(string: UserDefaults.standard.value(forKey: "pic") as! String))
+                    .resizable()
+                    .frame(width: 300, height: 300)
+                    .cornerRadius(20)
+                    .scaledToFit()
+            
+            
+            
+            Button {
+                dogViewModel.fetchNewImage()
+
+            } label: {
+                Text("Ещё")
+            }.buttonStyle(GrowingButton())
+            
+            
+            
+        }
+
+        
+    }
+}
+
+#Preview {
+    DogViewPort()
+}

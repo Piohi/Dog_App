@@ -11,7 +11,6 @@ import Observation
 final class DogModel: ObservableObject {
     @Published var model = DogPicModel.init()
     
-    
     private let service = APIService()
     
     func fetchNewImage() {
@@ -20,6 +19,7 @@ final class DogModel: ObservableObject {
             case .success(let success):
                 DispatchQueue.main.async {
                     self.model = success
+                    UserDefaults.standard.set(self.model.message, forKey: "pic")
                 }
             case .failure(let failure):
                 print(failure.localizedDescription)
