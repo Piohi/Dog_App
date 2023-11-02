@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AA01EF082ADC47E5004EAE08 /* FavoritesDogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */; };
-		AA01EF0A2ADED880004EAE08 /* DogViewLand.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01EF092ADED880004EAE08 /* DogViewLand.swift */; };
 		AA01EF0C2ADEDAB4004EAE08 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01EF0B2ADEDAB4004EAE08 /* Extension.swift */; };
 		AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C7A2A7BC98A00D481DE /* Dog_AppApp.swift */; };
 		AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C7C2A7BC98A00D481DE /* ContentView.swift */; };
@@ -70,7 +69,6 @@
 
 /* Begin PBXFileReference section */
 		AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDogsView.swift; sourceTree = "<group>"; };
-		AA01EF092ADED880004EAE08 /* DogViewLand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewLand.swift; sourceTree = "<group>"; };
 		AA01EF0B2ADEDAB4004EAE08 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		AA030C772A7BC98A00D481DE /* Dog_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dog_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA030C7A2A7BC98A00D481DE /* Dog_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_AppApp.swift; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 			children = (
 				AA030C7C2A7BC98A00D481DE /* ContentView.swift */,
 				AA03F7AA2AD6B3C8005493B2 /* DogViewPort.swift */,
-				AA01EF092ADED880004EAE08 /* DogViewLand.swift */,
 				AA030C9A2A7E664E00D481DE /* LoadingView.swift */,
 				AA030CA22A83E55600D481DE /* FavoriteCell.swift */,
 				AA030CA72A83F77700D481DE /* FavoritesView.swift */,
@@ -326,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA01EF0A2ADED880004EAE08 /* DogViewLand.swift in Sources */,
 				AA030CA32A83E55600D481DE /* FavoriteCell.swift in Sources */,
 				AA03F7AB2AD6B3C8005493B2 /* DogViewPort.swift in Sources */,
 				AA030CA82A83F77700D481DE /* FavoritesView.swift in Sources */,
@@ -505,8 +501,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,9 +512,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.Dog-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -536,8 +536,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,9 +547,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.Dog-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

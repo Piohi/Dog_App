@@ -17,21 +17,17 @@ struct ContentView: View {
     @Query private var favoritePicOfDogs: [FavoritesDogs]
     @Environment(\.modelContext) private var modelContext
     @StateObject private var dogViewModel = DogModel()
-    @State private var hasAppeared = false
+   @AppStorage("apeared") private var hasAppeared = false
     
     var body: some View {
+        
         ZStack {
             VStack {
                 TabView(selection: $selectedTab) {
                     ForEach(Tab.allCases, id: \.rawValue) { tab in
                         switch selectedTab {
                         case .dog:
-                            if orientation .isPortrait {
                                 DogViewPort()
-                            }
-                            else if orientation.isLandscape {
-                                DogViewPort()
-                            }
                         case .heart:
                             FavoritesDogsView()
                         case .cat:
@@ -40,22 +36,24 @@ struct ContentView: View {
                     }
                 }
                 .onAppear{
-                    guard !hasAppeared else { return }
-                    hasAppeared = true
-                    dogViewModel.fetchNewImage()
+                    guard !hasAppeared  else {return}
+                        UserDefaults.standard.set("https://images.dog.ceo/breeds/hound-basset/n02088238_9787.jpg", forKey: "pic")
+                        hasAppeared = true
+                    }
                 }
+                .animation(.smooth, value: orientation)
                 .onRotate { newOrientation in
                     orientation = newOrientation
                 }
             }
             VStack {
-                Spacer()
+//                Spacer()
                 CustomTabView(selectedTab: $selectedTab)
                 
             }
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

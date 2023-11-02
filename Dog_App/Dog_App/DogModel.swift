@@ -23,6 +23,7 @@ final class DogModel: ObservableObject {
                 }
             case .failure(let failure):
                 print(failure.localizedDescription)
+               
             }
         }
     }
