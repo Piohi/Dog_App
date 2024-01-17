@@ -12,6 +12,5 @@ import SwiftUI
 struct Dog_app_widgBundle: WidgetBundle {
     var body: some Widget {
         Dog_app_widg()
-        Dog_app_widgLiveActivity()
     }
 }

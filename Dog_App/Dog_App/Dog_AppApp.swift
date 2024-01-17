@@ -27,5 +27,6 @@ struct Dog_AppApp: App {
             ContentView()
         }
         .modelContainer(modelContainer)
+
     }
 }

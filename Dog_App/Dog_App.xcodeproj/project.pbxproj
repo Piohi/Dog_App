@@ -26,7 +26,6 @@
 		AA03F7822AD56F5B005493B2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA03F75A2AD5663A005493B2 /* WidgetKit.framework */; };
 		AA03F7832AD56F5B005493B2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA03F75C2AD5663A005493B2 /* SwiftUI.framework */; };
 		AA03F7862AD56F5B005493B2 /* Dog_app_widgBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7852AD56F5B005493B2 /* Dog_app_widgBundle.swift */; };
-		AA03F7882AD56F5B005493B2 /* Dog_app_widgLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7872AD56F5B005493B2 /* Dog_app_widgLiveActivity.swift */; };
 		AA03F78A2AD56F5B005493B2 /* Dog_app_widg.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7892AD56F5B005493B2 /* Dog_app_widg.swift */; };
 		AA03F78C2AD56F5B005493B2 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F78B2AD56F5B005493B2 /* AppIntent.swift */; };
 		AA03F78E2AD56F5D005493B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA03F78D2AD56F5D005493B2 /* Assets.xcassets */; };
@@ -39,8 +38,10 @@
 		AA03F7A42AD583AA005493B2 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8C2A7BCB7000D481DE /* APIMethod.swift */; };
 		AA03F7A92AD6A520005493B2 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7A82AD6A520005493B2 /* CustomTabView.swift */; };
 		AA03F7AB2AD6B3C8005493B2 /* DogViewPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7AA2AD6B3C8005493B2 /* DogViewPort.swift */; };
-		AA03F7AD2AD6D3E1005493B2 /* FavoritesDogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7AC2AD6D3E1005493B2 /* FavoritesDogs.swift */; };
+		AA03F7AD2AD6D3E1005493B2 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03F7AC2AD6D3E1005493B2 /* Favorites.swift */; };
 		AAB662622AA5F31900B6BA1D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AAB662612AA5F31900B6BA1D /* .gitignore */; };
+		AAD942DF2B57CC010032B93D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD942E22B57CC010032B93D /* Localizable.strings */; };
+		AAD942E02B57CC010032B93D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD942E22B57CC010032B93D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +89,6 @@
 		AA03F75C2AD5663A005493B2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		AA03F7812AD56F5B005493B2 /* Dog_app_widgExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dog_app_widgExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA03F7852AD56F5B005493B2 /* Dog_app_widgBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_app_widgBundle.swift; sourceTree = "<group>"; };
-		AA03F7872AD56F5B005493B2 /* Dog_app_widgLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_app_widgLiveActivity.swift; sourceTree = "<group>"; };
 		AA03F7892AD56F5B005493B2 /* Dog_app_widg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_app_widg.swift; sourceTree = "<group>"; };
 		AA03F78B2AD56F5B005493B2 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		AA03F78D2AD56F5D005493B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,8 +97,11 @@
 		AA03F7982AD57200005493B2 /* LargeSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSizeView.swift; sourceTree = "<group>"; };
 		AA03F7A82AD6A520005493B2 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		AA03F7AA2AD6B3C8005493B2 /* DogViewPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewPort.swift; sourceTree = "<group>"; };
-		AA03F7AC2AD6D3E1005493B2 /* FavoritesDogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDogs.swift; sourceTree = "<group>"; };
+		AA03F7AC2AD6D3E1005493B2 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		AAB662612AA5F31900B6BA1D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AAD942E12B57CC010032B93D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AAD942E32B57CD6B0032B93D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AAD942E42B57CE080032B93D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 		AA030C6E2A7BC98900D481DE = {
 			isa = PBXGroup;
 			children = (
+				AAD942E22B57CC010032B93D /* Localizable.strings */,
 				AAB662612AA5F31900B6BA1D /* .gitignore */,
 				AA030C792A7BC98A00D481DE /* Dog_App */,
 				AA03F7842AD56F5B005493B2 /* Dog_app_widg */,
@@ -153,7 +157,7 @@
 				AA030CA62A83F0CE00D481DE /* View */,
 				AA030C9C2A7E86F000D481DE /* ButtonStyle.swift */,
 				AA01EF072ADC47E5004EAE08 /* FavoritesDogsView.swift */,
-				AA03F7AC2AD6D3E1005493B2 /* FavoritesDogs.swift */,
+				AA03F7AC2AD6D3E1005493B2 /* Favorites.swift */,
 				AA01EF0B2ADEDAB4004EAE08 /* Extension.swift */,
 			);
 			path = Dog_App;
@@ -204,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				AA03F7852AD56F5B005493B2 /* Dog_app_widgBundle.swift */,
-				AA03F7872AD56F5B005493B2 /* Dog_app_widgLiveActivity.swift */,
 				AA03F7892AD56F5B005493B2 /* Dog_app_widg.swift */,
 				AA03F78B2AD56F5B005493B2 /* AppIntent.swift */,
 				AA03F78D2AD56F5D005493B2 /* Assets.xcassets */,
@@ -277,11 +280,13 @@
 			};
 			buildConfigurationList = AA030C722A7BC98A00D481DE /* Build configuration list for PBXProject "Dog_App" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				fr,
 			);
 			mainGroup = AA030C6E2A7BC98900D481DE;
 			packageReferences = (
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA030C822A7BC98A00D481DE /* Preview Assets.xcassets in Resources */,
+				AAD942DF2B57CC010032B93D /* Localizable.strings in Resources */,
 				AAB662622AA5F31900B6BA1D /* .gitignore in Resources */,
 				AA030C7F2A7BC98A00D481DE /* Assets.xcassets in Resources */,
 			);
@@ -313,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA03F78E2AD56F5D005493B2 /* Assets.xcassets in Resources */,
+				AAD942E02B57CC010032B93D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +338,7 @@
 				AA030C9D2A7E86F000D481DE /* ButtonStyle.swift in Sources */,
 				AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */,
 				AA030C8B2A7BCA6200D481DE /* ApiService.swift in Sources */,
-				AA03F7AD2AD6D3E1005493B2 /* FavoritesDogs.swift in Sources */,
+				AA03F7AD2AD6D3E1005493B2 /* Favorites.swift in Sources */,
 				AA01EF0C2ADEDAB4004EAE08 /* Extension.swift in Sources */,
 				AA030CAE2A8CE60000D481DE /* CatView.swift in Sources */,
 				AA030C7B2A7BC98A00D481DE /* Dog_AppApp.swift in Sources */,
@@ -346,7 +353,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA03F7882AD56F5B005493B2 /* Dog_app_widgLiveActivity.swift in Sources */,
 				AA03F78C2AD56F5B005493B2 /* AppIntent.swift in Sources */,
 				AA03F7972AD571DE005493B2 /* MediumSizeView.swift in Sources */,
 				AA03F7A42AD583AA005493B2 /* APIMethod.swift in Sources */,
@@ -368,6 +374,19 @@
 			targetProxy = AA03F7902AD56F5D005493B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAD942E22B57CC010032B93D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD942E12B57CC010032B93D /* en */,
+				AAD942E32B57CD6B0032B93D /* ru */,
+				AAD942E42B57CE080032B93D /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AA030C832A7BC98A00D481DE /* Debug */ = {

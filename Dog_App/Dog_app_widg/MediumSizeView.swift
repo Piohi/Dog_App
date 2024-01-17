@@ -7,31 +7,30 @@
 
 import SwiftUI
 import WidgetKit
-import Kingfisher
+
+struct ViewSizeEntry: TimelineEntry {
+    let date: Date
+    let providerInfo: String
+}
 
 struct MediumSizeView: View {
-//    var entry: SimpleEntry
-    @StateObject var viewModel = DogModel()
-//    @Binding var favDog: [String]
-//    var favorite: String
+    let entry: ViewSizeEntry
     
     var body: some View {
-        
-        HStack{
-            
-//            KFImage(URL(string: favorite))
-//                .resizable()
-//                .frame(width: 200, height: 150)
-//                .cornerRadius(20)
-//                .scaledToFill()
+        GeometryReader { geometry in
+            VStack(alignment: .center) {
                 
-//            Image(systemName: "person")
-//                .resizable()
-//                .scaledToFit()
-//                .foregroundStyle(.secondary)
-        }
-        .onAppear{
-            viewModel.fetchNewImage()
+                Text("\(Int(geometry.size.width)) x \(Int(geometry.size.height))")
+                    .font(.system(.title2, weight: .bold))
+                    
+                
+                Text(entry.providerInfo)
+                    .font(.footnote)
+            }
+            .containerBackground(for: .widget) {
+                Color.green
+            }
         }
     }
 }
+

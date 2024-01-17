@@ -43,8 +43,8 @@ struct Dog_app_widgEntryView : View {
     
     var body: some View {
         switch widgetFamily {
-//        case .systemMedium:
-//            MediumSizeView()
+        case .systemMedium:
+            MediumSizeView(entry: ViewSizeEntry(date: Date(), providerInfo: "Your puppy is missing you"))
         case .systemLarge:
             LargeSizeView()
         default:

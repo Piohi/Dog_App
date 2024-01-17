@@ -47,14 +47,16 @@ struct DogViewPort: View {
                         $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
                     }) ? "heart.fill" : "heart")
                     .font(.system(size: 40))
-                    .foregroundStyle(.gray)
+                    .foregroundStyle(favoritePicOfDogs.contains(where: {
+                        $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
+                    }) ? .red : .gray)
                     
                 }
                 Button {
                     dogViewModel.fetchNewImage()
                     
                 } label: {
-                    Text("Ещё")
+                    Text("buttonToGetNewPic")
                 }.buttonStyle(GrowingButton())
             }
         }

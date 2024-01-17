@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Dog_App
+
+  Created by Anton Godunov on 17.01.2024.
+  
+*/
+"buttonToGetNewPic" = "Plus";
+"catWarning" = "Nous n'avons pas de chats ici!";
