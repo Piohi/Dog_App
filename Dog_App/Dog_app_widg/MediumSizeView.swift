@@ -20,8 +20,7 @@ struct MediumSizeView: View {
         GeometryReader { geometry in
             VStack(alignment: .center) {
                 
-                Text("\(Int(geometry.size.width)) x \(Int(geometry.size.height))")
-                    .font(.system(.title2, weight: .bold))
+                Text("cat")
                     
                 
                 Text(entry.providerInfo)

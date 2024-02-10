@@ -7,3 +7,5 @@
 */
 "buttonToGetNewPic" = "Plus";
 "catWarning" = "Nous n'avons pas de chats ici!";
+"dogWarning" = "Cliquez sur le bouton pour commencer";
+"startButton" = "Сommencer";

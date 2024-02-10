@@ -10,9 +10,6 @@ import SwiftUI
 struct FavoritesView: View {
     @Binding var favDog: [String]
     var body: some View {
-        
-        
-//            ScrollView(showsIndicators: false) {
                 List {
                     ForEach(favDog.indices, id: \.self) {index in
                         FavoriteCell(stingOfpicture: favDog[index])
@@ -20,14 +17,6 @@ struct FavoritesView: View {
                         favDog.remove(atOffsets: indexSet)
                     })
                 }
-            
-//        }
-        
     }
 }
 
-//struct FavoritesView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FavoritesView()
-//    }
-//}

@@ -16,7 +16,7 @@ struct FavoriteCell: View {
     
     let stingOfpicture: String
     var body: some View {
-        ZStack(alignment: .center) {
+        ZStack(alignment: .topTrailing) {
             
            
                 KFImage(URL(string: stingOfpicture))
@@ -32,9 +32,9 @@ struct FavoriteCell: View {
                 
                     
             } label: {
-                Image(systemName:  "heart.fill")
-                    .font(.system(size: 60))
-                    .foregroundStyle(.red).opacity(0.2)
+                Image(systemName:  "xmark.circle.fill")
+                    .font(.system(size: 25))
+                    .foregroundStyle(.red)
                     
                 
             }

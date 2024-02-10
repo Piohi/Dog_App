@@ -17,50 +17,60 @@ struct DogViewPort: View {
     @Environment(\.scenePhase) var scenePhase
     
     var body: some View {
-        
-
-        VStack(spacing: 30) {
+        if UserDefaults.standard.value(forKey: "pic") != nil {
             
-
-            KFImage(URL(string: UserDefaults.standard.value(forKey: "pic") as! String))
-                .resizable()
-                .frame(width: 300, height: 300)
-                .cornerRadius(20)
-                .scaledToFit()
-            
-            HStack(spacing: 60)  {
+            VStack(spacing: 30) {
                 
-              
                 
-                Button {
-                    if  favoritePicOfDogs.contains(where: {
-                        $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
-                    }){
-                        modelContext.delete(favoritePicOfDogs.filter{ $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String }.first!)
-                    }
-                    else {
-                        modelContext.insert(FavoritesDogs(picsOfDogs: "\(UserDefaults.standard.value(forKey: "pic") as! String)"))
-                    }
+                KFImage(URL(string: UserDefaults.standard.value(forKey: "pic") as! String))
+                    .resizable()
+                    .frame(width: 300, height: 300)
+                    .cornerRadius(20)
+                    .scaledToFit()
+                
+                HStack(spacing: 60)  {
                     
-                } label: {
-                    Image(systemName: favoritePicOfDogs.contains(where: {
-                        $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
-                    }) ? "heart.fill" : "heart")
-                    .font(.system(size: 40))
-                    .foregroundStyle(favoritePicOfDogs.contains(where: {
-                        $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
-                    }) ? .red : .gray)
                     
+                    
+                    Button {
+                        if  favoritePicOfDogs.contains(where: {
+                            $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
+                        }){
+                            modelContext.delete(favoritePicOfDogs.filter{ $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String }.first!)
+                        }
+                        else {
+                            modelContext.insert(FavoritesDogs(picsOfDogs: "\(UserDefaults.standard.value(forKey: "pic") as! String)"))
+                        }
+                        
+                    } label: {
+                        Image(systemName: favoritePicOfDogs.contains(where: {
+                            $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
+                        }) ? "heart.fill" : "heart")
+                        .font(.system(size: 40))
+                        .foregroundStyle(favoritePicOfDogs.contains(where: {
+                            $0.picsOfDogs == UserDefaults.standard.value(forKey: "pic") as! String
+                        }) ? .red : .gray)
+                        
+                    }
+                    Button {
+                        dogViewModel.fetchNewImage()
+                        
+                    } label: {
+                        Text("buttonToGetNewPic")
+                    }.buttonStyle(GrowingButton())
                 }
+            }
+        } else {
+            VStack {
+            ContentUnavailableView("dogWarning", systemImage: "dog")
                 Button {
                     dogViewModel.fetchNewImage()
                     
                 } label: {
-                    Text("buttonToGetNewPic")
+                    Text("startButton")
                 }.buttonStyle(GrowingButton())
-            }
         }
-       
+        }
         }
     }
         
