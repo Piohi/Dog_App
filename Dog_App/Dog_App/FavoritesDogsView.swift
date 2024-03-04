@@ -12,6 +12,7 @@ struct FavoritesDogsView: View {
     @Query private var favoriteDogs: [FavoritesDogs]
     @Environment(\.modelContext) private var modelContext
     private let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 16) {
@@ -19,10 +20,10 @@ struct FavoritesDogsView: View {
                     FavoriteCell(stingOfpicture: dog.picsOfDogs)
                 }
             }
-        }
-        
+        }.animation(.easeInOut, value: favoriteDogs)
     }
 }
+
 
 
 #Preview {

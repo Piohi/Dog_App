@@ -9,9 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct CatView: View {
-    //    func getInt() -> Int {
-    //        abort()
-    //    }
+
     var body: some View {
         
         if UserDefaults.standard.value(forKey: "picOfCat") != nil {

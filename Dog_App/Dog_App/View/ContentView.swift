@@ -18,6 +18,10 @@ struct ContentView: View {
     @StateObject private var dogViewModel = DogModel()
     @AppStorage("apeared") private var hasAppeared = false
     
+    init() {
+           UITabBar.appearance().isHidden = true
+       }
+    
     var body: some View {
         
         ZStack {

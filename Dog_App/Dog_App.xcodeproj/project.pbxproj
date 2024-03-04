@@ -17,7 +17,6 @@
 		AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8C2A7BCB7000D481DE /* APIMethod.swift */; };
 		AA030C8F2A7BCB7C00D481DE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C8E2A7BCB7C00D481DE /* APIError.swift */; };
 		AA030C992A7E606700D481DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AA030C982A7E606700D481DE /* Kingfisher */; };
-		AA030C9B2A7E664E00D481DE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C9A2A7E664E00D481DE /* LoadingView.swift */; };
 		AA030C9D2A7E86F000D481DE /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030C9C2A7E86F000D481DE /* ButtonStyle.swift */; };
 		AA030CA32A83E55600D481DE /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA22A83E55600D481DE /* FavoriteCell.swift */; };
 		AA030CA52A83EF8300D481DE /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA030CA42A83EF8300D481DE /* DogModel.swift */; };
@@ -79,7 +78,6 @@
 		AA030C8A2A7BCA6200D481DE /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		AA030C8C2A7BCB7000D481DE /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		AA030C8E2A7BCB7C00D481DE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		AA030C9A2A7E664E00D481DE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AA030C9C2A7E86F000D481DE /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		AA030CA22A83E55600D481DE /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		AA030CA42A83EF8300D481DE /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 			children = (
 				AA030C7C2A7BC98A00D481DE /* ContentView.swift */,
 				AA03F7AA2AD6B3C8005493B2 /* DogViewPort.swift */,
-				AA030C9A2A7E664E00D481DE /* LoadingView.swift */,
 				AA030CA22A83E55600D481DE /* FavoriteCell.swift */,
 				AA030CA72A83F77700D481DE /* FavoritesView.swift */,
 				AA030CAD2A8CE60000D481DE /* CatView.swift */,
@@ -268,7 +265,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					AA030C762A7BC98A00D481DE = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -334,7 +331,6 @@
 				AA03F7AB2AD6B3C8005493B2 /* DogViewPort.swift in Sources */,
 				AA030CA82A83F77700D481DE /* FavoritesView.swift in Sources */,
 				AA030C8D2A7BCB7000D481DE /* APIMethod.swift in Sources */,
-				AA030C9B2A7E664E00D481DE /* LoadingView.swift in Sources */,
 				AA030C9D2A7E86F000D481DE /* ButtonStyle.swift in Sources */,
 				AA030C7D2A7BC98A00D481DE /* ContentView.swift in Sources */,
 				AA030C8B2A7BCA6200D481DE /* ApiService.swift in Sources */,
@@ -394,6 +390,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -455,6 +452,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -520,7 +518,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -555,7 +553,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

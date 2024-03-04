@@ -18,35 +18,26 @@ struct FavoriteCell: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             
-           
-                KFImage(URL(string: stingOfpicture))
-                    .resizable()
-                    .frame(width: 150, height: 100)
-                    .cornerRadius(20)
-                    .scaledToFit()
+            KFImage(URL(string: stingOfpicture))
+                .resizable()
+                .frame(width: 150, height: 100)
+                .cornerRadius(20)
+                .scaledToFit()
             
             Button {
                 if !favoriteDogs.isEmpty{
                     modelContext.delete(favoriteDogs.filter {$0.picsOfDogs == stingOfpicture}.first! ) }
                 else {return}
                 
-                    
+                
             } label: {
                 Image(systemName:  "xmark.circle.fill")
                     .font(.system(size: 25))
                     .foregroundStyle(.red)
-                    
-                
             }
-
-           
-            
         }
-            
-          
-        }
-        
     }
+}
 
 
 #Preview {

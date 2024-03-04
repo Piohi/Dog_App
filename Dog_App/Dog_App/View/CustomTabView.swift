@@ -40,10 +40,10 @@ struct CustomTabView: View {
                 }
              
             }
-            .frame(maxWidth: .infinity)
+//            .frame(maxWidth: .infinity)
             .padding(.top, 16)
             .padding(.bottom, 16)
-            .padding(.horizontal, 45)
+//            .padding(.horizontal, 45)
             .background(.gray)
             
             
