@@ -34,6 +34,7 @@ struct FavoriteCell: View {
                 Image(systemName:  "xmark.circle.fill")
                     .font(.system(size: 25))
                     .foregroundStyle(.red)
+                    .opacity(0.8)
             }
         }
     }
