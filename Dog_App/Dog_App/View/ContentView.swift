@@ -16,7 +16,6 @@ struct ContentView: View {
     @Query private var favoritePicOfDogs: [FavoritesDogs]
     @Environment(\.modelContext) private var modelContext
     @StateObject private var dogViewModel = DogModel()
-    @AppStorage("apeared") private var hasAppeared = false
     
     init() {
            UITabBar.appearance().isHidden = true

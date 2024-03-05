@@ -9,8 +9,9 @@ import SwiftUI
 
 struct FavoritesView: View {
     @Binding var favDog: [String]
+    
     var body: some View {
-                List {
+                ScrollView {
                     ForEach(favDog.indices, id: \.self) {index in
                         FavoriteCell(stingOfpicture: favDog[index])
                     }.onDelete(perform: { indexSet in

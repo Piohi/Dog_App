@@ -28,7 +28,7 @@ struct CustomTabView: View {
                     Spacer()
                     Image(systemName: selectedTab == tab ? fillImage : tab.rawValue)
                         .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
-                        .foregroundStyle(.white)
+//                        .foregroundStyle(.white)
                         .font(.system(size: 24))
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 0.1)) {
@@ -40,9 +40,9 @@ struct CustomTabView: View {
                 }
              
             }
-//            .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity)
             .padding(.top, 16)
-            .padding(.bottom, 16)
+//            .padding(.bottom, -10)
 //            .padding(.horizontal, 45)
             .background(.gray)
             
